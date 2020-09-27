@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="studentInfoScene" prefHeight="417.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tutionfeemanagement.StudentInformationController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="590.0" spacing="10.0" style="-fx-background-color: rgb(58,58,58);" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addInfoButtonAction" prefHeight="35.0" prefWidth="145.0" style="-fx-background-color: rgb(171,233,255);" text="Add Information" textFill="#1d034d">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#updateButtonAction" prefHeight="35.0" prefWidth="145.0" style="-fx-background-color: rgb(171,233,255);" text="Update" textFill="#1d034d">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#deleteButtonAction" prefHeight="35.0" prefWidth="145.0" style="-fx-background-color: rgb(171,233,255);" text="Delete" textFill="#1d034d">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="627.0" style="-fx-background-color: rgb(58,58,58);" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#f5f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Information">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TableView fx:id="studentTable" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="studentId" minWidth="20.0" prefWidth="66.0" text="ID" />
+          <TableColumn fx:id="studentName" minWidth="20.0" prefWidth="214.0" text="Name" />
+            <TableColumn fx:id="studentClass" minWidth="17.0" prefWidth="61.0" text="Class" />
+            <TableColumn fx:id="scholership" minWidth="20.0" prefWidth="82.0" text="Scholarship" />
+            <TableColumn fx:id="totalAmountCol" minWidth="20.0" prefWidth="89.0" text="Total Amount" />
+            <TableColumn fx:id="paidAmountCol" minWidth="20.0" prefWidth="95.0" text="Paid Amount" />
+            <TableColumn fx:id="due" prefWidth="89.0" text="Due" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

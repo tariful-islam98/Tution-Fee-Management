@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="466.0" spacing="15.0" style="-fx-background-color: rgb(33,33,33);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AddAccountantController">
+   <children>
+      <GridPane hgap="2.0" prefHeight="158.0" prefWidth="466.0" vgap="2.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Passwod :" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="accIdField" onKeyReleased="#idFieldAction" prefHeight="55.0" prefWidth="275.0" GridPane.columnIndex="1" />
+            <TextField fx:id="accNameField" prefHeight="55.0" prefWidth="275.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="accPasswordField" prefHeight="55.0" prefWidth="275.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="190.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="276.0" minWidth="10.0" prefWidth="276.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="153.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="153.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="159.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </GridPane>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addButtonAction" prefHeight="44.0" prefWidth="86.0" text="Add">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#clearButtonAction" text="Clear">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#cancelButtonAction" text="Cancel">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <Label fx:id="warningLabel" textFill="#e10303">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>

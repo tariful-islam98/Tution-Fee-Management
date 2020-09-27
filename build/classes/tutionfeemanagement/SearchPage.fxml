@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white smoke;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tutionfeemanagement.SearchPageController">
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: rgb(33,33,33);" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="idField" onKeyPressed="#idFieldAction" prefHeight="45.0" prefWidth="227.0" promptText="Enter Id">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="44.0" prefWidth="97.0" text="Search">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets bottom="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <center>
+      <GridPane hgap="5.0" prefHeight="261.0" prefWidth="600.0" vgap="5.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="205.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="425.0" minWidth="10.0" prefWidth="395.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount :" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Due :" GridPane.rowIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Scholarship :" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Class :" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID :">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Label fx:id="idLabel" prefHeight="44.0" prefWidth="383.0" style="-fx-border-color: black; -fx-border-width: 2;" GridPane.columnIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="dueLabel" prefHeight="44.0" prefWidth="383.0" style="-fx-border-color: black; -fx-border-width: 2;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalAmountLabel" prefHeight="44.0" prefWidth="383.0" style="-fx-border-color: black; -fx-border-width: 2;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="classLabel" prefHeight="44.0" prefWidth="383.0" style="-fx-border-color: black; -fx-border-width: 2;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="scholarshipLabel" prefHeight="44.0" prefWidth="383.0" style="-fx-border-color: black; -fx-border-width: 2;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="nameLabel" prefHeight="44.0" prefWidth="383.0" style="-fx-border-color: black; -fx-border-width: 2;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+</BorderPane>

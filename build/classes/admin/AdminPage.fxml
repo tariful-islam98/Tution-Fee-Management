@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="598.0" spacing="20.0" style="-fx-background-color: rgb(33,33,33);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminPageController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: rgb(69,52,140); -fx-border-color: rgb(177,181,3); -fx-border-width: 2;">
+         <children>
+            <Text fill="#9bb51b" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuition Fee Management System" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#adminInfoButton" prefHeight="65.0" prefWidth="327.0" style="-fx-border-color: rgb(170,214,234); -fx-border-width: 3;" text="Admin Information" textFill="#130628">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#accOfInfoButtonAction" prefHeight="65.0" prefWidth="325.0" style="-fx-border-color: rgb(170,214,234); -fx-border-width: 3;" text="Accounts Officer Information" textFill="#130628">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#logoutButtonAction" prefHeight="53.0" prefWidth="99.0" style="-fx-border-color: rgb(170,214,234); -fx-border-width: 3;" text="Logout" textFill="#130628">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>

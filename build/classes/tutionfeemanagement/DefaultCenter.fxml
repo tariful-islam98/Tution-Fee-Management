@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="355.0" prefWidth="513.0" style="-fx-background-color: rgb(33,33,33);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tutionfeemanagement.DefaultCenterController">
+   <children>
+      <TextField fx:id="stdIdField" alignment="CENTER" layoutX="150.0" layoutY="101.0" onKeyReleased="#idFieldAction" prefHeight="51.0" prefWidth="229.0" promptText="Enter Student Id">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="71.0" layoutY="190.0" mnemonicParsing="false" onAction="#enterButtonAction" prefHeight="45.0" prefWidth="158.0" text="Get Payment">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="285.0" layoutY="190.0" mnemonicParsing="false" onAction="#updateButtonAction" prefHeight="45.0" prefWidth="180.0" text="Update Payment">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <HBox alignment="CENTER" layoutX="4.0" layoutY="266.0" prefHeight="57.0" prefWidth="505.0" style="-fx-background-color: rgb(33,33,33);">
+         <children>
+            <Label fx:id="warningLabel" textFill="#d00000">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminInfoController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="615.0" style="-fx-background-color: rgb(69,52,140); -fx-border-color: rgb(177,181,3); -fx-border-width: 2;">
+         <children>
+            <Text fill="#9bb51b" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Information" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <TableView fx:id="adminTable" prefHeight="284.0" prefWidth="615.0">
+        <columns>
+          <TableColumn fx:id="adminIdColl" minWidth="-1.0" prefWidth="146.0" text="ID" />
+            <TableColumn fx:id="nameCol" prefWidth="266.0" text="Name" />
+          <TableColumn fx:id="adminPasswordCol" minWidth="-1.0" prefWidth="277.0" text="Password" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" prefHeight="97.0" prefWidth="615.0" spacing="20.0" style="-fx-background-color: rgb(33,33,33);">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addAdminButtonAction" prefHeight="56.0" prefWidth="117.0" style="-fx-border-color: rgb(170,214,234); -fx-border-width: 3;" text="ADD" textFill="#2c0a6b">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#updateButtonAction" style="-fx-border-color: rgb(170,214,234); -fx-border-width: 3;" text="Update" textFill="#2c0a6b">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#deleteButtonAction" prefHeight="56.0" prefWidth="113.0" style="-fx-border-color: rgb(170,214,234); -fx-border-width: 3;" text="Delete" textFill="#2c0a6b">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

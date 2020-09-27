@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="adminLoginScene" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="420.0" spacing="15.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminLoginPageController">
+   <children>
+      <Text fill="#0973a1" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Login">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <TextField fx:id="adminIdField" alignment="CENTER" maxWidth="250.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter ID" style="-fx-border-color: rgb(170,214,234); -fx-border-width: 3;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="adminPasswordField" alignment="CENTER" maxWidth="250.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter Password" style="-fx-border-color: rgb(170,214,234); -fx-border-width: 3;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Button mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: rgb(170,214,234); -fx-border-width: 3;" text="Login" textFill="#160451">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#backButtonAction" prefHeight="37.0" prefWidth="70.0" style="-fx-border-color: rgb(170,214,234); -fx-border-width: 3;" text="Back" textFill="#160451">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="warningLabel" textFill="#c60606">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>

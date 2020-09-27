@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="homeStagePane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="852.0" style="-fx-background-color: rgb(33,33,33);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tutionfeemanagement.FXMLDocumentController">
+   <left>
+      <VBox prefHeight="355.0" prefWidth="159.0" spacing="10.0" style="-fx-background-color: rgb(84,95,96); -fx-border-color: rgb(177,181,3); -fx-border-width: 2;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#paymentButtonAction" prefHeight="60.0" prefWidth="159.0" style="-fx-border-color: rgb(170,214,234); -fx-border-width: 3;" text="Payment" textFill="#160451">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#infoAction" prefHeight="60.0" prefWidth="159.0" style="-fx-border-color: rgb(170,214,234); -fx-border-width: 3;" text="Information" textFill="#160451">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="62.0" prefWidth="159.0" style="-fx-border-color: rgb(170,214,234); -fx-border-width: 3;" text="Search" textFill="#160451">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#logOutAction" prefHeight="60.0" prefWidth="163.0" style="-fx-border-color: rgb(170,214,234); -fx-border-width: 3;" text="Logout" textFill="#160451">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#backButtonAction" prefHeight="67.0" prefWidth="159.0" style="-fx-background-color: rgb(178,6,18);" text="Back" textFill="#d6d1eb">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: rgb(69,52,140); -fx-border-color: rgb(177,181,3); -fx-border-width: 2;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#9bb51b" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuition Fee Management System" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

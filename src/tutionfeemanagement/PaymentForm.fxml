@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="531.0" style="-fx-background-color: rgb(33,33,33);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tutionfeemanagement.PaymentFormController">
+   <children>
+      <Text fill="#f5c0c0" layoutX="228.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pay Tutuion Fee" wrappingWidth="160.23828125">
+         <font>
+            <Font name="System Italic" size="21.0" />
+         </font>
+      </Text>
+      <GridPane hgap="5.0" layoutX="71.0" layoutY="62.0" prefHeight="198.0" prefWidth="389.0" vgap="5.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Paid Amount :" GridPane.rowIndex="2">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ID    :">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Date  :" GridPane.rowIndex="3">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <TextField fx:id="paidAmountField" alignment="CENTER" prefHeight="57.0" prefWidth="239.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount :" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="paymentDateField" prefHeight="42.0" prefWidth="239.0" promptText="mm/dd/yyyy" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <Label fx:id="stdIdLabel" alignment="CENTER" prefHeight="42.0" prefWidth="241.0" style="-fx-background-color: white;" GridPane.columnIndex="1">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalAmountLabel" alignment="CENTER" prefHeight="46.0" prefWidth="240.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="148.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.0" minWidth="10.0" prefWidth="241.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="67.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button layoutX="147.0" layoutY="291.0" mnemonicParsing="false" onAction="#submitButtonAction" text="Submit">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="341.0" layoutY="291.0" mnemonicParsing="false" onAction="#cancelButtonAction" text="Cancel">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label fx:id="feeLabel" layoutX="246.0" layoutY="355.0" prefHeight="35.0" prefWidth="4.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
